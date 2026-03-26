@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kumarkashish761-beep/textutil/static/css/main.6646fc2d.css",
+    "main.js": "/kumarkashish761-beep/textutil/static/js/main.17ab2f65.js",
+    "static/js/453.e9e7ec89.chunk.js": "/kumarkashish761-beep/textutil/static/js/453.e9e7ec89.chunk.js",
+    "index.html": "/kumarkashish761-beep/textutil/index.html",
+    "main.6646fc2d.css.map": "/kumarkashish761-beep/textutil/static/css/main.6646fc2d.css.map",
+    "main.17ab2f65.js.map": "/kumarkashish761-beep/textutil/static/js/main.17ab2f65.js.map",
+    "453.e9e7ec89.chunk.js.map": "/kumarkashish761-beep/textutil/static/js/453.e9e7ec89.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6646fc2d.css",
+    "static/js/main.17ab2f65.js"
+  ]
+}
