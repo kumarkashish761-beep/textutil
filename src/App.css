@@ -38,7 +38,7 @@ body {
 }
 
 
-.nav ul li :hover {
+.nav ul li:hover {
   color: #38bdf8;
 }
 a{
@@ -176,5 +176,105 @@ p {
   100% {
     opacity: 0;
     transform: translateY(-10px);
+  }
+}
+/* ================= RESPONSIVE DESIGN ================= */
+
+/* 📱 Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+    gap: 10px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .nav ul li {
+    font-size: 16px;
+  }
+
+  .nav input {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .nav button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .text-area {
+    margin: 20px 15px;
+  }
+
+  textarea {
+    height: 120px;
+    font-size: 14px;
+  }
+
+  .btn button {
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  .preview {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+
+/* 📲 Tablet (600px - 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+
+  .nav {
+    padding: 15px 25px;
+  }
+
+  .nav ul {
+    gap: 15px;
+  }
+
+  .text-area {
+    margin: 30px 20px;
+  }
+
+  textarea {
+    height: 140px;
+  }
+
+  .btn button {
+    padding: 8px 16px;
+  }
+}
+
+
+/* 💻 Large Screens (optional improvement) */
+@media (min-width: 1200px) {
+
+  .text-area {
+    max-width: 900px;
+  }
+
+  .preview {
+    max-width: 1000px;
   }
 }
