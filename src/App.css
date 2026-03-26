@@ -1,0 +1,180 @@
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: #f1f5f9;
+}
+/* Navbar */
+.nav {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e293b;
+  padding: 15px 40px;
+  color: white;
+  
+
+  
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav ul li  {
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+  text-decoration: none;
+  
+}
+
+
+.nav ul li :hover {
+  color: #38bdf8;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+
+/* Search Box */
+.nav input {
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.nav button {
+  margin-left: 8px;
+  padding: 6px 12px;
+  border: none;
+  background-color: #38bdf8;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav button:hover {
+  background-color: #0ea5e9;
+}
+
+/* Text Area Section */
+.text-area {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.text-area h1 {
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+/* Textarea */
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: none;
+  outline: none;
+}
+
+/* Buttons */
+.btn {
+  margin-top: 15px;
+}
+
+.btn button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #1e293b;
+  color: white;
+  border-radius: 8px;
+  cursor:pointer;
+  transition: 0.3s;
+}
+
+.btn button:hover {
+  background-color: #334155;
+}
+
+/* Summary Section */
+h1, h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: #1e293b;
+}
+
+p {
+  text-align: center;
+  margin: 10px;
+  font-size: 16px;
+}
+.preview{
+  max-width: 1200px;
+  height: fit-content;
+  
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 9px;
+  
+
+}
+.summary{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.container{
+  overflow: hidden;
+}
+
+.alert {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #e2e8f0;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+
+  /* animation */
+  animation: fadeInOut 3s ease forwards;
+}
+
+/* Keyframes */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
