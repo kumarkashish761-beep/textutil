@@ -1,26 +1,25 @@
-import React from "react";
-// import { Link } from "react-router-dom";
+import React, { useState } from "react";
 
-const Navbar = (props) => {
+export default function Navbar(props) {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <>      
-      <div className="nav">
-        <ul>
-          <li>Textutil</li>
-          <li>About</li>
-           <li>Contact us</li>
-        </ul>
-        <div>
-          {/* <input placeholder="search here " />
-          <button>search</button> */}
-          <button className="theme" onClick={()=>{props.togglemode()
-          }} >
-            {props.btntext}
-          </button>
-        </div>
-      </div>
-    </>
-  );
-};
+    <nav className="nav">
+      <h2>TextUtils</h2>
 
-export default Navbar;
+      {/* Hamburger Icon */}
+      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        ☰
+      </div>
+
+      {/* Menu */}
+      <ul className={menuOpen ? "nav-links active" : "nav-links"}>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+
+      <button onClick={props.togglemode}>{props.btntext}</button>
+    </nav>
+  );
+}
